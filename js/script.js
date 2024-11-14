@@ -1,3 +1,4 @@
+// Toggle butonuna tıklama olayı
 const toggleButton = document.querySelector(".menu-toggle");
 const navbarLinks = document.querySelectorAll(".navbar a");
 
