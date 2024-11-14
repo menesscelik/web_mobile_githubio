@@ -170,34 +170,6 @@ body{
 	margin: 0 auto;
   text-decoration: none;
 }
-.button-1-about {
-	display: block;
-	text-align: center;
-	background: #1D809F;
-	border-radius: 5px;
-	color:#fff;
-	width: 180px;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	margin: 0 auto;
-  margin-top: 50px;
-  text-decoration: none;
-}
-.button-1-cv {
-	display: block;
-	text-align: center;
-	background: #1D809F;
-	border-radius: 5px;
-	color:#fff;
-	width: 180px;
-	height: 50px;
-	font-size: 20px;
-	line-height: 50px;
-	margin: 0 auto;
-  margin-top: 10px;
-  text-decoration: none;
-}
 #cv_01 {
   text-align: center;
   font-weight: 700;
