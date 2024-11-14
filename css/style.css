@@ -1,7 +1,9 @@
 body{
   background-color: #e3dede;
 }
-
+.menu-toggle {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: center;
