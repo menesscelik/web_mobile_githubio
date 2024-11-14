@@ -1,34 +1,61 @@
 body{
   background-color: #e3dede;
 }
-.menu-toggle {
-  display: none;
-}
+/* Genel Navbar Stilleri */
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #333030; 
+  background-color: #333030;
   overflow: hidden;
   font-size: large;
 }
+
+/* Navbar Bağlantıları */
 .navbar a {
-  float: left;
-  display: block;
-  color: #FFFFFF; 
+  color: #FFFFFF;
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   padding: 14px 20px;
   text-decoration: none;
 }
+
+/* Hover Durumu */
 .navbar a:hover {
-  background-color: #795548; 
+  background-color: #795548;
   color: #FFFFFF;
 }
-.navbar a.active {
-  background-color: #795548; 
+
+/* Menü Toggle Butonu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
   color: #FFFFFF;
+  font-size: 30px;
+  cursor: pointer;
 }
+
+/* Mobil Cihazlar için Stiller */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none; /* Başlangıçta gizli */
+  }
+
+  .navbar.show {
+    display: flex; /* Açıldığında görünür hale gelir */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
 
 #welcome {
   width: 100%;

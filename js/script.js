@@ -3,6 +3,7 @@ function toggleMenu() {
   navbar.classList.toggle('show');
 }
 
+
 function updateTime() {
   var zaman = new Date();
   var saat = zaman.getHours();
