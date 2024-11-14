@@ -2,71 +2,31 @@ body{
   background-color: #e3dede;
 }
 
-/* Navbar genel stil */
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #333030;
+  background-color: #333030; 
   overflow: hidden;
   font-size: large;
-  position: relative;
 }
-
-/* Navbar bağlantıları */
 .navbar a {
-  color: #FFFFFF;
+  float: left;
+  display: block;
+  color: #FFFFFF; 
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   padding: 14px 20px;
   text-decoration: none;
 }
-
-/* Hover ve active durumları */
-.navbar a:hover,
-.navbar a.active {
-  background-color: #795548;
+.navbar a:hover {
+  background-color: #795548; 
   color: #FFFFFF;
 }
-
-/* Hamburger menü butonu (mobil için) */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #000000;
-  font-size: 30px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.navbar a.active {
+  background-color: #795548; 
+  color: #FFFFFF;
 }
-
-/* Mobil cihazlar için stiller */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar a {
-    display: none;
-    width: 100%;
-    text-align: left;
-    padding: 10px 20px;
-  }
-
-  .navbar a.show {
-    display: block;
-  }
-}
-
-
 
 #welcome {
   width: 100%;

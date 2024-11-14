@@ -1,14 +1,3 @@
-// Toggle butonuna tıklama olayı
-const toggleButton = document.querySelector(".menu-toggle");
-const navbarLinks = document.querySelectorAll(".navbar a");
-
-toggleButton.addEventListener("click", () => {
-  navbarLinks.forEach(link => {
-    link.classList.toggle("show");
-  });
-});
-
-
 function updateTime() {
   var zaman = new Date();
   var saat = zaman.getHours();
