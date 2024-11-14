@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/script.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Main Menu</a>
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h1 id="portfolio-h1-c01">Projects</h1>
+    <div id="projelerim">
+        <div class="proje" data-tarih="2024-08-08" data-populerlik="1" >
+            <img src="img/web_site.png" alt="Proje 8">
+            <h3>Personal Website</h3>
+            <p>This project is my personal website that I created with my own domain. On my website, you can find information about my projects and about me. Additionally, you can contact me through the contact page.</p>
+            <a href="https://menescelik.me" target="_blank">
+                <p>My Website</p>
+            </a>
+        </div>
+        <div class="proje" data-tarih="2022-09-10" data-populerlik="5" >
+            <img src="img/unnamed.jpg" alt="Proje 2">
+            <h3>Elevator Safety System</h3>
+            <p>This project, which I applied for the TUBITAK competition in my first year, is a system designed to ensure the safety of elevators in factories.</p>
+        </div>
+        <div class="proje" data-tarih="2023-09-10" data-populerlik="7" >
+            <img src="img/Logo.jpg" alt="proje 3">
+            <h3>The-Rone</h3>
+            <p>We participated in the Pre-Incubation program at our school's Digital Park Technopark with my friends. We started our project within the scope of this program, but we have currently put the project on hold.</p>
+        </div>
+    </div>
+    
+    
+    
+    
+    <button id="populerlik" class="button-1" onclick="filtrele('populerlik') ">En Beğenilen</button>
+    <button id="tarihsel" class="button-1" onclick="filtrele('tarih')">Tarihsel</button>
+
+    
+    <div id="social-icons">
+        <ul>
+            <li  id="social-1"><a href="https://github.com/menesscelik" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li  id="social-2"><a href="https://x.com/menescelik0" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li  id="social-3"><a href="https://www.linkedin.com/in/menesscelik" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li  id="social-4"><a href="mailto:menescelik.tr@example.com"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
