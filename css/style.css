@@ -224,15 +224,15 @@ body{
 	font-size: 20px;
 	line-height: 50px;
 	margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 1%;
   text-decoration: none;
 }
-#cv_01 {
+ #cv_01 {
   text-align: center;
   font-weight: 700;
   position: relative;
   margin-top: 10px;
-}
+} 
 
 /* contact */
 /* Form Container */
