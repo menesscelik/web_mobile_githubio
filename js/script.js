@@ -58,3 +58,53 @@ function myFunction() {
     projelerArray.forEach(proje => projelerim.appendChild(proje));
 }
 
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Formun varsayılan gönderimini durdur
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  // Hata mesajı alanlarını seç
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const messageError = document.getElementById("messageError");
+  const successMessage = document.getElementById("successMessage");
+
+  // Hata mesajlarını temizle
+  nameError.style.display = "none";
+  emailError.style.display = "none";
+  messageError.style.display = "none";
+  successMessage.style.display = "none";
+
+  let hasError = false;
+
+  // İsim kontrolü
+  if (name === "") {
+      nameError.textContent = "Lütfen isim yazın.";
+      nameError.style.display = "block";
+      hasError = true;
+  }
+
+  // E-posta kontrolü
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "" || !emailRegex.test(email)) {
+      emailError.textContent = "Lütfen geçerli bir email giriniz.";
+      emailError.style.display = "block";
+      hasError = true;
+  }
+
+  // Mesaj kontrolü
+  if (message === "") {
+      messageError.textContent = "Lütfen mesajınızı giriniz.";
+      messageError.style.display = "block";
+      hasError = true;
+  }
+
+  // Hata yoksa başarı mesajını göster
+  if (!hasError) {
+      successMessage.style.display = "block";
+
+      // Gerekirse formu temizleyin
+      document.getElementById("contactForm").reset();
+  }
+});
