@@ -369,7 +369,7 @@ body{
 
 @media screen and (max-width: 480px) {
   #contact {
-    width: 100%; /* Çok küçük ekranlarda genişlik tam ekran */
+    width: 100%; 
     padding: 15px;
   }
 
