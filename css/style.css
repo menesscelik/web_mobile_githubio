@@ -230,34 +230,94 @@ body{
 #cv_01 {
   text-align: center;
   font-weight: 700;
-  position: absolute;       /* Konumu mutlak yapıyoruz */
-  top: 80%;
-  left: 51%;                /* Sayfanın yatay ortasına hizalıyoruz */
-  transform: translateX(-50%);  /* Yatayda tamamen ortalamak için */
+  position: relative;
+  margin-top: 10px;
 }
+
 /* contact */
 /* Form Container */
 #contact {
   background: #8b8687; /* Form arka planı koyu renk */
   max-width: 400px;
-  width: 90%; /* Mobil cihazlar için genişliği %100'e yakın olacak şekilde ayarlandı */
-  padding: 30px;
+  width: 90%;
+  padding: 20px; /* Mobil cihazlarda padding azaltıldı */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #ffffff;
   text-align: center;
-  margin: 20px auto; /* Ortalanmış */
+  margin: 20px auto;
 }
 
 /* Form Başlığı */
 .form h2 {
-  font-size: 24px;
+  font-size: 22px; /* Başlık boyutu küçültüldü */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   border-bottom: 2px solid #ffffff;
   display: inline-block;
   padding-bottom: 5px;
+}
+
+/* Giriş Alanları */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #444444;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Odak Durumu */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  border-color: #6ca0dc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
+}
+
+/* Mobil Cihazlar için Ayarlar */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 15px; /* Mobil cihazlarda padding azaltıldı */
+  }
+
+  .form h2 {
+    font-size: 20px; /* Başlık boyutu küçültüldü */
+    margin-bottom: 10px;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    font-size: 14px; /* Giriş alanı metin boyutu küçültüldü */
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    width: 100%; /* Küçük ekranlarda tam genişlik */
+    padding: 10px;
+  }
+
+  .form h2 {
+    font-size: 18px; /* Başlık boyutu daha da küçültüldü */
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
 }
 
 /* Etiketler */
