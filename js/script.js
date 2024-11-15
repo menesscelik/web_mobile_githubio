@@ -40,9 +40,6 @@ function myFunction() {
       moreText.style.display = "inline";
   }
 }
-
-
-
   function filtrele(kriter) {
     const projeler = document.querySelectorAll('.proje');
     let projelerArray = Array.from(projeler);
