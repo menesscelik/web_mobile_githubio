@@ -253,6 +253,15 @@ body{
   text-align: center;
   margin: 20px auto;
 }
+.error-message {
+  color: #ff4d4d; /* Daha parlak kırmızı renk */
+  font-size: 1em; /* Boyutu biraz daha büyük */
+  display: none; /* Başlangıçta gizle */
+  margin-top: 5px;
+  font-weight: 700; /* Kalın yazı */
+  text-align: left; /* Sol hizalı yap */
+  padding-left: 5px; /* Biraz iç boşluk ekle */
+}
 /* Form Başlığı */
 .form h2 {
   font-size: 22px; /* Başlık boyutu küçültüldü */
