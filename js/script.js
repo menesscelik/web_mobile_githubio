@@ -61,6 +61,7 @@ function myFunction() {
     // Filtrelenen veya sıralanan projeleri ekrana yazdır
     projelerArray.forEach(proje => projelerim.appendChild(proje));
 }
+
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Formun varsayılan olarak gönderilmesini engeller
 
@@ -103,6 +104,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     errorMessages.style.display = "block";
   } else {
     successMessage.style.display = "block";
+    errorMessages.style.display = "none"; // Hata mesajlarını gizle
     document.getElementById("contactForm").reset(); // Formu temizle
   }
 });
