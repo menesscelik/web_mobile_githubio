@@ -257,12 +257,6 @@ body{
   text-align: center;
   margin: 20px auto;
 }
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-  display: none; /* Başlangıçta gizli olacak */
-}
 
 /* Form Başlığı */
 .form h2 {
@@ -309,7 +303,7 @@ body{
   .form input[type="email"],
   .form textarea {
     font-size: 14px; 
-    padding: 5px;
+    padding: px;
   }
 }
 @media screen and (max-width: 480px) {
