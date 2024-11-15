@@ -1,7 +1,6 @@
 body{
   background-color: #e3dede;
 }
-/* Genel Navbar Stilleri */
 .navbar {
   display: flex;
   justify-content: center;
@@ -9,8 +8,6 @@ body{
   overflow: hidden;
   font-size: large;
 }
-
-/* Navbar Bağlantıları */
 .navbar a {
   color: #FFFFFF;
   text-align: center;
@@ -19,15 +16,11 @@ body{
   padding: 14px 20px;
   text-decoration: none;
 }
-
-/* Hover Durumu */
 .navbar a:hover {
   background-color: #795548;
   color: #FFFFFF;
 }
-
-/* Menü Toggle Butonu */
-.menu-toggle {
+.m-toggle {
   display: none;
   background: none;
   border: none;
@@ -35,28 +28,22 @@ body{
   font-size: 30px;
   cursor: pointer;
 }
-
-/* Mobil Cihazlar için Stiller */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    display: none; /* Başlangıçta gizli */
+    display: none; 
   }
-
   .navbar.show {
-    display: flex; /* Açıldığında görünür hale gelir */
+    display: flex;
   }
-
-  .menu-toggle {
+  .m-toggle {
     display: block;
     position: absolute;
     top: 10px;
     right: 10px;
   }
 }
-
-
 #welcome {
   width: 100%;
   height: 730px;
@@ -65,63 +52,50 @@ body{
   background-position: center;
   margin-top: -50px;
 }
-
-/* Mobil cihazlarda (768px ve altı) yükseklik ve margin ayarları optimize edildi */
 @media screen and (max-width: 768px) {
   #welcome {
-    height: 500px; /* Küçük ekranlar için yükseklik azaltıldı */
-    margin-top: -30px; /* Margin azaltıldı */
+    height: 500px; 
+    margin-top: -30px; 
   }
 }
-
-/* index */
 #index-h1-c01 {
   text-align: center;
   padding-top: 150px;
-  font-size: 64px; /* Mobil cihazlar için boyut azaltıldı */
+  font-size: 64px; 
   font-weight: 700;
   margin-top: 30px;
 }
-
-/* Mobil cihazlar için başlık boyutu optimize edildi */
 @media screen and (max-width: 768px) {
   #index-h1-c01 {
     padding-top: 100px;
-    font-size: 40px; /* Küçük ekranlarda başlık boyutu küçültüldü */
+    font-size: 40px; 
     margin-top: 20px;
   }
 }
-
 #index-h3-c02 {
   text-align: center;
   font-size: 50px;
   font-style: italic;
   margin-top: -30px;
 }
-
-/* Mobil cihazlarda başlık boyutu küçültüldü */
 @media screen and (max-width: 768px) {
   #index-h3-c02 {
-    font-size: 28px; /* Küçük ekranlarda boyut azaltıldı */
+    font-size: 28px; 
     margin-top: -10px;
   }
 }
-
 #zaman {
   color: #000000;
   font-size: 80px;
   text-align: center;
   margin-top: 20px;
 }
-
-/* Mobil cihazlarda zaman göstergesinin boyutu optimize edildi */
 @media screen and (max-width: 768px) {
   #zaman {
-    font-size: 40px; /* Küçük ekranlarda boyut azaltıldı */
+    font-size: 40px; 
     margin-top: 10px;
   }
 }
-
 /* Portfolio */
 #portfolio-h1-c01{
   text-align: center;
@@ -151,7 +125,7 @@ body{
   background-position: center;
   margin-top: -50px;
 }
-/* icons */
+/* ikonlar */
 #icons ul li{
   width: 300px;
   padding-top: 120px;
@@ -215,7 +189,6 @@ body{
 #social-icons i {
   color: white;
 }
-
 #eighth-p{
   text-align: center;
   margin-top: 40px;
@@ -268,21 +241,18 @@ body{
   position: relative;
   margin-top: 10px;
 } 
-
-/* contact */
-/* Form Container */
+/* Form  */
 #contact {
   background: #8b8687; /* Form arka planı koyu renk */
   max-width: 400px;
   width: 90%;
-  padding: 20px; /* Mobil cihazlarda padding azaltıldı */
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #ffffff;
   text-align: center;
   margin: 20px auto;
 }
-
 /* Form Başlığı */
 .form h2 {
   font-size: 22px; /* Başlık boyutu küçültüldü */
@@ -293,7 +263,6 @@ body{
   display: inline-block;
   padding-bottom: 5px;
 }
-
 /* Giriş Alanları */
 .form input[type="text"],
 .form input[type="email"],
@@ -308,7 +277,6 @@ body{
   font-size: 16px;
   box-sizing: border-box;
 }
-
 /* Odak Durumu */
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
@@ -317,36 +285,30 @@ body{
   outline: none;
   box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
 }
-
 /* Mobil Cihazlar için Ayarlar */
 @media screen and (max-width: 768px) {
   #contact {
-    padding: 15px; /* Mobil cihazlarda padding azaltıldı */
+    padding: 15px; 
   }
-
   .form h2 {
-    font-size: 20px; /* Başlık boyutu küçültüldü */
+    font-size: 20px;
     margin-bottom: 10px;
   }
-
   .form input[type="text"],
   .form input[type="email"],
   .form textarea {
-    font-size: 14px; /* Giriş alanı metin boyutu küçültüldü */
+    font-size: 14px; 
     padding: 10px;
   }
 }
-
 @media screen and (max-width: 480px) {
   #contact {
-    width: 100%; /* Küçük ekranlarda tam genişlik */
+    width: 100%;
     padding: 10px;
   }
-
   .form h2 {
-    font-size: 18px; /* Başlık boyutu daha da küçültüldü */
+    font-size: 18px; 
   }
-
   .form input[type="text"],
   .form input[type="email"],
   .form textarea {
@@ -354,7 +316,6 @@ body{
     padding: 8px;
   }
 }
-
 /* Etiketler */
 .form label {
   display: block;
@@ -364,7 +325,6 @@ body{
   text-align: left;
   color: #ffffff;
 }
-
 /* Giriş Alanları */
 .form input[type="text"],
 .form input[type="email"],
@@ -380,8 +340,6 @@ body{
   font-size: 16px;
   resize: none;
 }
-
-/* Odak Durumu */
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
 .form textarea:focus {
@@ -389,22 +347,18 @@ body{
   outline: none;
   box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
 }
-
 /* Responsive Ayarlar */
 @media screen and (max-width: 768px) {
   #contact {
-    padding: 20px; /* Mobil cihazlarda daha küçük padding */
+    padding: 20px;
   }
-
   .form h2 {
-    font-size: 20px; /* Başlık boyutu küçültüldü */
+    font-size: 20px;
   }
-
   .form label {
     margin-top: 15px;
-    font-size: 14px; /* Etiket boyutu küçültüldü */
+    font-size: 14px; 
   }
-
   .form input[type="text"],
   .form input[type="email"],
   .form textarea {
@@ -463,20 +417,18 @@ body{
   width: 100%;
   height: auto;
   border-radius: 10px;
-  transition: transform 0.3s; /* Büyüme efekti için geçiş */
+  transition: transform 0.3s; 
 }
 /* Proje Başlığı */
 .proje h3 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-/* Proje Açıklaması */
 .proje p {
   font-size: 16px;
   color: #ddd;
   line-height: 1.4;
 }
-/* Proje Butonu */
 .proje a {
   display: block;
   margin: 10px auto;
@@ -491,9 +443,8 @@ body{
 .proje a:hover {
   background-color: #6ca0dc;
 }
-/* Resim Hover Efekti */
 .proje:hover img {
-  transform: scale(1.1); /* %10 büyütme */
+  transform: scale(1.1);
 }
 #populerlik{
   text-align: center;

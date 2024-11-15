@@ -1,4 +1,4 @@
-function toggleMenu() {
+function toggle() {
   const navbar = document.querySelector('.navbar');
   navbar.classList.toggle('show');
 }
@@ -61,3 +61,50 @@ function myFunction() {
     // Filtrelenen veya sıralanan projeleri ekrana yazdır
     projelerArray.forEach(proje => projelerim.appendChild(proje));
 }
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Formun varsayılan olarak gönderilmesini engeller
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+  const messageError = document.getElementById("messageError");
+  const successMessage = document.getElementById("successMessage");
+
+  // E-posta formatı kontrolü için regex
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Hata mesajlarını temizle
+  nameError.style.display = "none";
+  emailError.style.display = "none";
+  messageError.style.display = "none";
+  successMessage.style.display = "none"; // Başarı mesajını gizle
+
+  // Alan doğrulamaları
+  if (!name) {
+    nameError.style.display = "block";
+    return;
+  }
+
+  if (!email) {
+    emailError.textContent = "Please enter your email.";
+    emailError.style.display = "block";
+    return;
+  }
+
+  if (!emailPattern.test(email)) {
+    emailError.textContent = "Please enter a valid email address.";
+    emailError.style.display = "block";
+    return;
+  }
+
+  if (!message) {
+    messageError.style.display = "block";
+    return;
+  }
+
+  // Form geçerli ise başarı mesajı göster
+  successMessage.style.display = "block";
+  document.getElementById("contactForm").reset(); // Formu temizle
+});
