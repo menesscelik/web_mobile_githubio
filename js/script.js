@@ -63,48 +63,46 @@ function myFunction() {
 }
 document.getElementById("contactForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Formun varsayılan olarak gönderilmesini engeller
+
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  const nameError = document.getElementById("nameError");
-  const emailError = document.getElementById("emailError");
-  const messageError = document.getElementById("messageError");
+  const errorMessages = document.getElementById("errorMessages");
   const successMessage = document.getElementById("successMessage");
 
   // E-posta formatı kontrolü için regex
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   // Hata mesajlarını temizle
-  nameError.style.display = "none";
-  emailError.style.display = "none";
-  messageError.style.display = "none";
+  errorMessages.style.display = "none";
+  errorMessages.innerHTML = "";
   successMessage.style.display = "none"; // Başarı mesajını gizle
+
+  // Hata mesajları için değişken
+  let errors = [];
 
   // Alan doğrulamaları
   if (!name) {
-    nameError.style.display = "block";
-    return;
+    errors.push("Lütfen isminizi giriniz.");
   }
 
   if (!email) {
-    emailError.textContent = "Please enter your email.";
-    emailError.style.display = "block";
-    return;
-  }
-
-  if (!emailPattern.test(email)) {
-    emailError.textContent = "Please enter a valid email address.";
-    emailError.style.display = "block";
-    return;
+    errors.push("Lütfen e-posta adresinizi giriniz.");
+  } else if (!emailPattern.test(email)) {
+    errors.push("Lütfen geçerli bir e-posta adresi giriniz.");
   }
 
   if (!message) {
-    messageError.style.display = "block";
-    return;
+    errors.push("Lütfen mesajınızı giriniz.");
   }
 
-  // Form geçerli ise başarı mesajı göster
-  successMessage.style.display = "block";
-  document.getElementById("contactForm").reset(); // Formu temizle
+  // Hata mesajlarını göster veya başarı mesajını göster
+  if (errors.length > 0) {
+    errorMessages.innerHTML = errors.join("<br>");
+    errorMessages.style.display = "block";
+  } else {
+    successMessage.style.display = "block";
+    document.getElementById("contactForm").reset(); // Formu temizle
+  }
 });
