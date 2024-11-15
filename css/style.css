@@ -247,7 +247,7 @@ body{
 } 
 /* Form  */
 #contact {
-  background: #8b8687; /* Form arka planı koyu renk */
+  background: #8b8687; 
   max-width: 400px;
   width: 90%;
   padding: 20px;
@@ -258,9 +258,8 @@ body{
   margin: 20px auto;
 }
 
-/* Form Başlığı */
 .form h2 {
-  font-size: 22px; /* Başlık boyutu küçültüldü */
+  font-size: 22px; 
   font-weight: bold;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -268,7 +267,7 @@ body{
   display: inline-block;
   padding-bottom: 5px;
 }
-/* Giriş Alanları */
+
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
@@ -282,7 +281,6 @@ body{
   font-size: 16px;
   box-sizing: border-box;
 }
-/* Odak Durumu */
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
 .form textarea:focus {
@@ -290,7 +288,6 @@ body{
   outline: none;
   box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
 }
-/* Mobil Cihazlar için Ayarlar */
 @media screen and (max-width: 768px) {
   #contact {
     padding: 15px; 
@@ -321,7 +318,6 @@ body{
     padding: 8px;
   }
 }
-/* Etiketler */
 .form label {
   display: block;
   font-weight: bold;
@@ -330,7 +326,6 @@ body{
   text-align: left;
   color: #ffffff;
 }
-/* Giriş Alanları */
 .form input[type="text"],
 .form input[type="email"],
 .form textarea {
@@ -367,8 +362,8 @@ body{
   .form input[type="text"],
   .form input[type="email"],
   .form textarea {
-    font-size: 14px; /* Giriş alanı metin boyutu küçültüldü */
-    padding: 10px; /* Giriş alanı padding küçültüldü */
+    font-size: 14px; 
+    padding: 10px; 
   }
 }
 
@@ -394,13 +389,12 @@ body{
 #projelerim {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Ortalamak için */
+  justify-content: center; 
   gap: 20px;
   margin: 20px auto;
   padding: 20px;
   max-width: 1200px;
 }
-/* Proje Kartı */
 .proje {
   width: 280px;
   background-color: #333030;
@@ -412,7 +406,6 @@ body{
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden; /* Taşmaları önlemek için */
 }
-/* Proje Kartı Hover Efekti */
 .proje:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
